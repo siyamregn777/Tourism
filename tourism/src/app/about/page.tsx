@@ -1,4 +1,5 @@
 import styles from './abouts.module.css'; // Assuming you have CSS in a separate file
+import image1 from '../../../public/images/DALL·E 2024-12-16 00.14.39 - A luxurious and cozy bedroom with a modern design. The room features a large, plush bed with soft, layered bedding in neutral tones, accented by decor.webp';
 export default function AboutUs() {
   return (
     <div>
