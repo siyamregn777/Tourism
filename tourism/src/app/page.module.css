@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    height: 100%; /* Full height of the parent */
+    padding-bottom: 100px; /* Space at the bottom for footer */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+  }
+  .main {
+    flex: 1; /* Allow main content to grow and take available space */
+    padding: 20px; /* Space around the main content */
+    text-align: center; /* Center text within the main area */
+    position: relative; /* Positioning context for overlay */
+  }
+  .videoContainer {
+    position: relative; /* Positioning context for overlay */
+    width: 100%; /* Full width of the parent */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow to prevent scrollbars */
+  }
