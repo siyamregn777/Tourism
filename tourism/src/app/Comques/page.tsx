@@ -1,16 +1,25 @@
-'use client'
+'use client';
 import { useEffect, useState } from 'react';
 import style from './comques.module.css';
 
+type Accommodation = {
+  id: string;
+  name: string;
+  location: string;
+  price: number;
+  rating: number;
+  description: string;
+};
+
 const Comques = () => {
-  const [accommodations, setAccommodations] = useState([]);
+  const [accommodations, setAccommodations] = useState<Accommodation[]>([]);
 
   useEffect(() => {
     // Fetch accommodation data from your API
     const fetchAccommodations = async () => {
       try {
         const response = await fetch('/api/accommodations'); // Update with your API endpoint
-        const data = await response.json();
+        const data: Accommodation[] = await response.json();
         setAccommodations(data);
       } catch (error) {
         console.error('Error fetching accommodations:', error);

@@ -4,16 +4,16 @@ import styles from './page.module.css'; // Import the CSS module
 import Middle1 from './Middle1/page';
 import Middle2 from './Middle2/page';
 import Middle3 from './Middle3/page';
-import Comques from './comques/page';
-import Video from 'next-video';
-import video2 from '../../videos/1321208-uhd_3840_2160_30fps.mp4';
+import Comques from './Comques/page';
+// import Video from 'next-video';
+// import video2 from '../../videos/1321208-uhd_3840_2160_30fps.mp4';
 export default function Home() {
   return (
     <div className={styles.wrapper}>
       <Header /> {/* Include Header */}
       <main className={styles.main}>
         <div className={styles.videoContainer}>
-          <Video src={video2} autoPlay muted loop controls={false} />
+          {/* <Video src={video2} autoPlay muted loop controls={false} /> */}
           <div className={styles.overlay}>
             <h1>Welcome to Ethiopia</h1>
             <p>Your comfort is our priority.</p>
