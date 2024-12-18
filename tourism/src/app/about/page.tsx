@@ -1,4 +1,5 @@
 import styles from './abouts.module.css'; // Assuming you have CSS in a separate file
+import Image from 'next/image';
 import image1 from '../../../public/images/DALL·E 2024-12-16 00.14.39 - A luxurious and cozy bedroom with a modern design. The room features a large, plush bed with soft, layered bedding in neutral tones, accented by decor.webp';
 export default function AboutUs() {
   return (
@@ -7,7 +8,13 @@ export default function AboutUs() {
         <h1>About Us</h1>
         <p>Discover our story, mission, and values.</p>
         <div className={styles.content}>
-        
+        <Image 
+                src={image1}
+                alt="Image 1" 
+                width={300} 
+                height={250} 
+                className={styles.aboutImage}
+          />
           <div className={styles.textSection}>
             <h2>Our Story</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
