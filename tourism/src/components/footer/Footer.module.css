@@ -1,30 +1,46 @@
-import styles from './Footer.module.css';
-import Link from 'next/link';
-const Footer = () => {
-  return (
-    <footer className={styles.footer}>
-      <div className={styles.footer_content}>
-          <div className={styles.footer_links}>
-            <h3> Quick Links</h3>
-            <ul className={styles.footlink}>
-              <li><Link href="/">Home</Link></li>
-              <li><Link href="/about">About</Link></li>
-              <li><Link href="/contact">Contact Us</Link></li>
-            </ul>
-          </div>
+.footer {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    text-align: center; /* Center text */
+    padding: 1rem; /* Padding */
+    width: 100%; /* Full width */
+  }
+  .footer_content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .footer_content div{
+    width: 30%;
+  }
+  .footlink ul,
+  .footsocial ul{
+    list-style: none;
+    padding: 0%;
+  }
 
-          <div className={styles.footinfo}>
-            <h3>Contact Us</h3>
-            <p>Email: siyamregnyeshidagna777@gmail.com</p>
-            <p>Phone: +251961177953</p>
-            <p>Address: 123 Business 4kilo, Addis Ababa, Ethiopia</p>
-          </div>
+  .footlink li,
+  .footsocial li {
+    margin-bottom: 10px;
+  }
 
-        
-      </div>
-      <p className={styles.footbotm}>© 2024 Hotel Name. All rights reserved.</p>
-    </footer>
-  );
-};
+  .footlink a,
+  .footsocial a {
+    color: rgb(222, 222, 232);
+    text-decoration: none;
+  }
 
-export default Footer;
+  .footlink a:hover,
+  .footsocial a:hover{
+    color: fuchsia;
+  }
+
+  .footinfo p{
+    margin: 5px 0;
+  }
+  
+  .footbotm{
+    font-size: 12px;
+    margin-top: 20px;
+    font-family:  sans-serif;
+  }
