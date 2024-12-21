@@ -1,4 +1,4 @@
-import clientPromise from '../../../lib/mongodb';
+import clientPromise from '../../../../Backend_lib/monngodb';
 
 export async function POST(req) {
   const client = await clientPromise;
